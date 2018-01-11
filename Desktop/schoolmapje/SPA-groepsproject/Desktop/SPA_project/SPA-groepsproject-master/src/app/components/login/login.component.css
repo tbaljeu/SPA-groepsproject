@@ -1,0 +1,16 @@
+.btn-primary{
+  background:white;
+  color:black;
+  transition: all 0.3s ease;
+  border:#C6002A 1px solid;
+}
+
+.btn-primary:hover{
+  background: #C6002A;
+  color:white;
+  border:white 1px solid;
+}
+
+.form-control:hover{
+  border-color:blue;;
+}
