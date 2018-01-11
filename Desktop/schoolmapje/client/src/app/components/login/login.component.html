@@ -1,0 +1,21 @@
+
+<div class="col-md-4" ></div>
+<div class="center">
+  <div class="col-md-4" style="padding:15px;">
+    <div *ngIf="loggedIn"><h1>inloggen gelukt</h1></div>
+    <div *ngIf="!loggedIn">
+      <form class="formSignin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <hr>
+        <input type="email" #email id="inputEmail" class="form-control" placeholder="Email address" style="margin-bottom:5px;"required="" autofocus="">
+        <input type="password" #password id="inputPassword" class="form-control" placeholder="Password" required="">
+        <div class="checkbox">
+        </div>
+        <div style="float:right">
+          <button class="btn btn-primary" style="width:200px;" (click)="loginFunc(email.value,password.value)">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="col-md-4"></div>
