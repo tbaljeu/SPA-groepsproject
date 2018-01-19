@@ -19,9 +19,6 @@ body{
 }
 
 app-root{
-  position: absolute;
-  top: 50%;
-  margin-top: -200px;
   /* half of #content height*/
   left: 0;
   width: 100%;

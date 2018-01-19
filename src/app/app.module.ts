@@ -10,6 +10,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './components/login/login.component';
+import { DataconverterComponent } from './components/login/dataconverter/dataconverter.component';
 
 // Authentication.
 import { SignupComponent } from './auth/signup/signup.component';
@@ -27,7 +28,8 @@ import { HalloComponent } from './hallo/hallo.component';
     LoginComponent,
     SignupComponent,
     SigninComponent,
-    HalloComponent
+    HalloComponent,
+    DataconverterComponent,
   ],
   imports: [
     BrowserModule,

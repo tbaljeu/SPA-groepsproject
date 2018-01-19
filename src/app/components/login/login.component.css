@@ -14,3 +14,9 @@
 .form-control:hover{
   border-color:blue;;
 }
+.loginform{
+  height:100vh;
+}
+.topLine{
+  height:30vh;
+}
