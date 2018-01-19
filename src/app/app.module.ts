@@ -1,15 +1,22 @@
-import { UserService } from './services/user.service';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { UserService } from './services/user.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule, LOCALE_ID } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { HttpModule, Http } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-//import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
+
+// Authentication.
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { AuthService } from './auth/auth.service';
+import { AuthGuard } from './auth/auth-guard.service';
+import { HalloComponent } from './hallo/hallo.component';
 
 @NgModule({
   declarations: [
@@ -18,17 +25,20 @@ import { LoginComponent } from './components/login/login.component';
    // HeaderComponent,
    // Login.ComponentComponent,
     LoginComponent,
+    SignupComponent,
+    SigninComponent,
+    HalloComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
-  providers: [
-    UserService
-  ],
+  providers: [UserService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {}
