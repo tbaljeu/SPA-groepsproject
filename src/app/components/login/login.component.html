@@ -1,9 +1,14 @@
 
 <div class="col-md-4" ></div>
+<div *ngIf="loggedIn">
+  <div class="col-4">
+    <app-dataconverter></app-dataconverter>
+  </div>
+</div>
 <div class="center">
-  <div class="col-md-4" style="padding:15px;">
-    <div *ngIf="loggedIn"><h1>inloggen gelukt</h1></div>
+  <div class="col-md-4" style="vertical-align: top;height:100%;">
     <div *ngIf="!loggedIn">
+      <div class="topLine"></div>
       <form class="formSignin">
         <h2 class="form-signin-heading">Please sign in</h2>
         <hr>

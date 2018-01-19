@@ -1,0 +1,30 @@
+#pagediv {
+  padding-top: 15px;
+  background-color: white; /* for vizualization purposes */
+  width: 100%;
+  margin-top:5px;
+  color:black;
+  padding-left:15px;
+  min-height: 100vh;
+
+}
+#left{
+  background-color: grey;
+  width:50%;
+}
+
+#right{
+  width:50%;
+}
+.btn-primary{
+  background:white;
+  color:#C6002A;
+  transition: all 0.3s ease;
+  border:#C6002A 1px solid;
+}
+
+.btn-primary:hover{
+  background: #C6002A;
+  color:white;
+  border:white 1px solid;
+}

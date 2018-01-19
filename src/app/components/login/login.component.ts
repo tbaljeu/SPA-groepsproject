@@ -24,7 +24,7 @@ loggedIn:boolean=false;
   }
 
   loginFunc(username,password){
-    this.user = this.userService.getUser(username,password);
+    //this.user = this.userService.getUser(username,password);
     console.log(username,password);
     if(username == "user" && password=="password"){
       this.loggedIn = true;
